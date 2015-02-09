@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0575E0A169CF34A00F1171D /* BBView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0575E09169CF34A00F1171D /* BBView.m */; };
+		C0575E0A169CF34A00F1171D /* KMHorizontalButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0575E09169CF34A00F1171D /* KMHorizontalButtonsView.m */; };
 		C0575E10169CFF9900F1171D /* screenshot-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C0575E0F169CFF9900F1171D /* screenshot-01.png */; };
 		C091A50716658487007FB94A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C091A50616658487007FB94A /* UIKit.framework */; };
 		C091A50916658487007FB94A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C091A50816658487007FB94A /* Foundation.framework */; };
@@ -25,8 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C0575E08169CF34A00F1171D /* BBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBView.h; sourceTree = "<group>"; };
-		C0575E09169CF34A00F1171D /* BBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBView.m; sourceTree = "<group>"; };
+		C0575E08169CF34A00F1171D /* KMHorizontalButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHorizontalButtonsView.h; sourceTree = "<group>"; };
+		C0575E09169CF34A00F1171D /* KMHorizontalButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMHorizontalButtonsView.m; sourceTree = "<group>"; };
 		C0575E0F169CFF9900F1171D /* screenshot-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-01.png"; sourceTree = "<group>"; };
 		C091A50216658487007FB94A /* BubbleButtonView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleButtonView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C091A50616658487007FB94A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -99,8 +99,8 @@
 				C091A51E16658488007FB94A /* ViewController.h */,
 				C091A51F16658488007FB94A /* ViewController.m */,
 				C091A52116658488007FB94A /* ViewController.xib */,
-				C0575E08169CF34A00F1171D /* BBView.h */,
-				C0575E09169CF34A00F1171D /* BBView.m */,
+				C0575E08169CF34A00F1171D /* KMHorizontalButtonsView.h */,
+				C0575E09169CF34A00F1171D /* KMHorizontalButtonsView.m */,
 				C091A50D16658488007FB94A /* Supporting Files */,
 			);
 			path = BubbleButtonView;
@@ -193,7 +193,7 @@
 				C091A51316658488007FB94A /* main.m in Sources */,
 				C091A51716658488007FB94A /* AppDelegate.m in Sources */,
 				C091A52016658488007FB94A /* ViewController.m in Sources */,
-				C0575E0A169CF34A00F1171D /* BBView.m in Sources */,
+				C0575E0A169CF34A00F1171D /* KMHorizontalButtonsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

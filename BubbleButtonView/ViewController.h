@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h> // Don't forget QuartzCore
-#import "BBView.h"
+#import "KMHorizontalButtonsView.h"
 
-@interface ViewController : UIViewController <BBDelegate> {
+@interface ViewController : UIViewController <KMHorizontalButtonsViewDelegate> {
     // View that holds bubble buttons
-    __weak IBOutlet BBView *bubbleView;
+    __weak IBOutlet KMHorizontalButtonsView *bubbleView;
     
     // Main Button
     __weak IBOutlet UIButton *mainButton;
