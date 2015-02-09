@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" promptedForUpgradeToXcode5="NO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <development version="5000" identifier="xcode"/>
@@ -8,7 +8,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
-                <outlet property="bubbleView" destination="24" id="34"/>
+                <outlet property="bubbleConteiner" destination="wjM-ug-qDy" id="i5P-RL-DX1"/>
+                <outlet property="bubbleView" destination="8jD-jd-smB" id="gl2-En-703"/>
                 <outlet property="mainButton" destination="11" id="39"/>
                 <outlet property="view" destination="8" id="29"/>
             </connections>
@@ -18,9 +19,29 @@
             <rect key="frame" x="0.0" y="20" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24" customClass="KMHorizontalButtonsView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24">
                     <rect key="frame" x="0.0" y="212" width="320" height="292"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jD-jd-smB" customClass="KMHorizontalButtonsView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjM-ug-qDy">
+                            <rect key="frame" x="0.0" y="146" width="320" height="146"/>
+                            <color key="backgroundColor" red="0.2470588235" green="0.70588235290000001" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" red="1" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="8jD-jd-smB" firstAttribute="top" secondItem="24" secondAttribute="top" id="GkZ-3y-Dem"/>
+                        <constraint firstAttribute="trailing" secondItem="wjM-ug-qDy" secondAttribute="trailing" id="Jdw-Ho-nO6"/>
+                        <constraint firstAttribute="bottom" secondItem="wjM-ug-qDy" secondAttribute="bottom" id="Kac-Me-7Es"/>
+                        <constraint firstAttribute="trailing" secondItem="8jD-jd-smB" secondAttribute="trailing" id="U7i-fg-KS7"/>
+                        <constraint firstItem="wjM-ug-qDy" firstAttribute="leading" secondItem="24" secondAttribute="leading" id="Wax-3o-flg"/>
+                        <constraint firstItem="wjM-ug-qDy" firstAttribute="height" secondItem="8jD-jd-smB" secondAttribute="height" id="gr5-1d-Q8q"/>
+                        <constraint firstItem="wjM-ug-qDy" firstAttribute="top" secondItem="8jD-jd-smB" secondAttribute="bottom" id="lpX-jC-sLt"/>
+                        <constraint firstItem="8jD-jd-smB" firstAttribute="leading" secondItem="24" secondAttribute="leading" id="xie-sc-Cf5"/>
+                    </constraints>
                 </view>
                 <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11">
                     <rect key="frame" x="64" y="60" width="192" height="62"/>

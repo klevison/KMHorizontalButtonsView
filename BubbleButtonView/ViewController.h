@@ -11,8 +11,9 @@
 #import "KMHorizontalButtonsView.h"
 
 @interface ViewController : UIViewController <KMHorizontalButtonsViewDelegate> {
-    // View that holds bubble buttons
+    // Views that holds bubble buttons
     __weak IBOutlet KMHorizontalButtonsView *bubbleView;
+    __weak IBOutlet UIView *bubbleConteiner;
     
     // Main Button
     __weak IBOutlet UIButton *mainButton;

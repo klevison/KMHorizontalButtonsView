@@ -35,19 +35,37 @@
 {
     [bubbleView removeBubbleButtonsWithInterval:0 animated:NO];
     
-    NSArray *bubbleStringArray = @[@"Hello", @"this", @"is", @"a", @"test", @"of", @"the", @"BubbleButtonView", @"class", @"Each", @"one", @"of", @"these", @"is", @"a", @"button"];
+    NSArray *bubbleStringArray = @[@"Hello", @"this", @"is", @"a", @"test", @"of", @"the", @"BubbleButtonView", @"class"];
+    NSArray *bubbleStringArray2 = @[@"Hello", @"this", @"is", @"a", @"test"];
     
     // Create colors for buttons
     UIColor *textColor = [UIColor blueColor];
     UIColor *bgColor = [UIColor yellowColor];
     
+    KMHorizontalButtonsView *bubbleView2 = [[KMHorizontalButtonsView alloc] initWithFrame:bubbleConteiner.frame];
+    [bubbleConteiner addSubview:bubbleView2];
+    
+    [bubbleView2 fillBubbleViewWithButtons:bubbleStringArray2
+                 bgColor:bgColor
+                 textColor:textColor
+                 fontName:@"Courier-Bold"
+                 fontSize:14
+                 applyShadow:NO
+                 animated:NO
+                 resizeToFitSubviews:YES];
+    
+    [bubbleView2 resizeToFitSubviews];
+    [bubbleView2 setNeedsLayout];
+    [bubbleView2 setCenter:CGPointMake(CGRectGetMidX([bubbleConteiner bounds]), CGRectGetMidY([bubbleConteiner bounds]))];
+    [bubbleView2 setBackgroundColor:[UIColor lightGrayColor]];
+
     // Now make them sucka's.
     [bubbleView fillBubbleViewWithButtons:bubbleStringArray
                                   bgColor:bgColor
                                 textColor:textColor
                                  fontName:@"Courier-Bold"
                                  fontSize:14
-                              applyShadow:NO
+                              applyShadow:YES
                                  animated:YES
                       resizeToFitSubviews:NO];
 }
