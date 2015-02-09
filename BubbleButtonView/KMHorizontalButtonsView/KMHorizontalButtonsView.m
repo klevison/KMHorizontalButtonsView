@@ -122,7 +122,7 @@
             [UIView animateWithDuration:ftime animations:^{
                 button.alpha = 1;
             } completion:^(BOOL fin){
-                if (self.subviews.count > 0) {
+                if (self.bubbleButtonArray.count > 0) {
                     [self.bubbleButtonArray removeObjectAtIndex:0];
                     [self addBubbleButtonsWithInterval:ftime animated:animated];
                 }
@@ -148,7 +148,7 @@
             [UIView animateWithDuration:ftime animations:^{
                 button.alpha = 0;
             } completion:^(BOOL fin){
-                if (self.subviews.count > 0) {
+                if (self.bubbleButtonArray.count > 0) {
                     [[self.subviews objectAtIndex:self.subviews.count - 1] removeFromSuperview];
                     [self removeBubbleButtonsWithInterval:ftime animated:animated];
                 }
