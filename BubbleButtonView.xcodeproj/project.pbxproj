@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0575E0A169CF34A00F1171D /* KMHorizontalButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0575E09169CF34A00F1171D /* KMHorizontalButtonsView.m */; };
+		91553B6D1A8902D00039071D /* KMHorizontalButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91553B6C1A8902D00039071D /* KMHorizontalButtonsView.m */; };
 		C0575E10169CFF9900F1171D /* screenshot-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C0575E0F169CFF9900F1171D /* screenshot-01.png */; };
 		C091A50716658487007FB94A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C091A50616658487007FB94A /* UIKit.framework */; };
 		C091A50916658487007FB94A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C091A50816658487007FB94A /* Foundation.framework */; };
@@ -25,8 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C0575E08169CF34A00F1171D /* KMHorizontalButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHorizontalButtonsView.h; sourceTree = "<group>"; };
-		C0575E09169CF34A00F1171D /* KMHorizontalButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMHorizontalButtonsView.m; sourceTree = "<group>"; };
+		91553B6B1A8902D00039071D /* KMHorizontalButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHorizontalButtonsView.h; sourceTree = "<group>"; };
+		91553B6C1A8902D00039071D /* KMHorizontalButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMHorizontalButtonsView.m; sourceTree = "<group>"; };
 		C0575E0F169CFF9900F1171D /* screenshot-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-01.png"; sourceTree = "<group>"; };
 		C091A50216658487007FB94A /* BubbleButtonView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleButtonView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C091A50616658487007FB94A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -63,10 +63,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91553B6A1A8902D00039071D /* KMHorizontalButtonsView */ = {
+			isa = PBXGroup;
+			children = (
+				91553B6B1A8902D00039071D /* KMHorizontalButtonsView.h */,
+				91553B6C1A8902D00039071D /* KMHorizontalButtonsView.m */,
+			);
+			path = KMHorizontalButtonsView;
+			sourceTree = "<group>";
+		};
 		C091A4F716658487007FB94A = {
 			isa = PBXGroup;
 			children = (
-				C091A5291665849E007FB94A /* QuartzCore.framework */,
 				C091A50C16658488007FB94A /* BubbleButtonView */,
 				C091A50516658487007FB94A /* Frameworks */,
 				C091A50316658487007FB94A /* Products */,
@@ -84,6 +92,7 @@
 		C091A50516658487007FB94A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C091A5291665849E007FB94A /* QuartzCore.framework */,
 				C091A50616658487007FB94A /* UIKit.framework */,
 				C091A50816658487007FB94A /* Foundation.framework */,
 				C091A50A16658487007FB94A /* CoreGraphics.framework */,
@@ -94,13 +103,12 @@
 		C091A50C16658488007FB94A /* BubbleButtonView */ = {
 			isa = PBXGroup;
 			children = (
+				91553B6A1A8902D00039071D /* KMHorizontalButtonsView */,
 				C091A51516658488007FB94A /* AppDelegate.h */,
 				C091A51616658488007FB94A /* AppDelegate.m */,
 				C091A51E16658488007FB94A /* ViewController.h */,
 				C091A51F16658488007FB94A /* ViewController.m */,
 				C091A52116658488007FB94A /* ViewController.xib */,
-				C0575E08169CF34A00F1171D /* KMHorizontalButtonsView.h */,
-				C0575E09169CF34A00F1171D /* KMHorizontalButtonsView.m */,
 				C091A50D16658488007FB94A /* Supporting Files */,
 			);
 			path = BubbleButtonView;
@@ -190,10 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91553B6D1A8902D00039071D /* KMHorizontalButtonsView.m in Sources */,
 				C091A51316658488007FB94A /* main.m in Sources */,
 				C091A51716658488007FB94A /* AppDelegate.m in Sources */,
 				C091A52016658488007FB94A /* ViewController.m in Sources */,
-				C0575E0A169CF34A00F1171D /* KMHorizontalButtonsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +282,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BubbleButtonView/BubbleButtonView-Prefix.pch";
 				INFOPLIST_FILE = "BubbleButtonView/BubbleButtonView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -286,6 +295,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BubbleButtonView/BubbleButtonView-Prefix.pch";
 				INFOPLIST_FILE = "BubbleButtonView/BubbleButtonView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
